@@ -1,8 +1,6 @@
-
 import 'package:flutter/material.dart';
-import 'package:flutter_app/Class/TestRoutes/FirstScreen.dart';
-
-import 'Class/TestRoutes/SecondScreen.dart';
+import 'IHM/Accueil.dart';
+import 'IHM/InfoBD.dart';
 
 void main() async {
   runApp(
@@ -12,9 +10,9 @@ void main() async {
       initialRoute: '/',
       routes: {
         // When navigating to the "/" route, build the FirstScreen widget.
-        '/': (context) => FirstScreen(),
+        '/': (context) => Accueil(),
         // When navigating to the "/second" route, build the SecondScreen widget.
-        '/second': (context) => SecondScreen(),
+        '/second': (context) => InfoBD(),
       },
     ),
   );

@@ -10,6 +10,8 @@ class Livre {
   String date;
   int year;
   int numberPages;
+  int like;
+  int disslike;
   // 'lien vers les différentes taille de couvertures'
   String urlCover_Taille_S;
   String urlCover_Taille_M;
@@ -48,7 +50,8 @@ class Livre {
           "http://covers.openlibrary.org/b/isbn/9782809491708-M.jpg";
       this.urlCover_Taille_L =
           "http://covers.openlibrary.org/b/isbn/9782809491708-L.jpg";
-
+      like = 0;
+      disslike =0;
       res = "ok";
     } else {
       print('Request failed with status: ${response.statusCode}.');
